@@ -296,13 +296,13 @@
                                     <i class="ti ti-file-code"></i>
                                 </div>
                             </div>
-                            <!-- <div class="form-step active" id="step-1">
+                            <div class="form-step active" id="step-1">
                                 <div class="card-body">
                                     <h5>I. Biodata Calon</h5>
                                     <div class="form-group">
                                         <label class="form-label" for="nama-lengkap">Nama Lengkap</label>
-                                        <input type="text" class="form-control" id="nama-lengkap"
-                                            name="nama-lengkap" placeholder="Masukkan Nama Lengkap" required>
+                                        <input type="text" class="form-control" id="nama-lengkap" name="nama-lengkap"
+                                            placeholder="Masukkan Nama Lengkap" required>
                                     </div>
                                     <div class="row">
                                         <div class="col-md-6 col-sm-6">
@@ -341,7 +341,8 @@
                                             <div class="form-group">
                                                 <label class="form-label" for="nomor-tk-panda">Nomor TK. Panda</label>
                                                 <input type="text" class="form-control" id="nomor-tk-panda"
-                                                    name="nomor-tk-panda" placeholder="Masukkan Nomor TK Panda" required>
+                                                    name="nomor-tk-panda" placeholder="Masukkan Nomor TK Panda"
+                                                    required>
                                             </div>
                                         </div>
                                         <div class="col-md-6 col-sm-6">
@@ -381,7 +382,8 @@
                                     </div>
                                     <div class="form-group">
                                         <label class="form-label" for="status-perkawinan-biodata">Status</label>
-                                        <select class="form-select" id="status-perkawinan-biodata" name="status-perkawinan-biodata" required>
+                                        <select class="form-select" id="status-perkawinan-biodata"
+                                            name="status-perkawinan-biodata" required>
                                             <option value="">- Status -</option>
                                             <option value="kawin">Kawin</option>
                                             <option value="belum-kawin">Belum Kawin</option>
@@ -396,8 +398,8 @@
                                         <div class="col-md-6 col-sm-6">
                                             <div class="form-group">
                                                 <label class="form-label" for="nomor-hp">Nomor HP</label>
-                                                <input type="number" class="form-control" id="nomor-hp"
-                                                    name="nomor-hp" placeholder="Masukkan Nomor HP Aktif" required>
+                                                <input type="number" class="form-control" id="nomor-hp" name="nomor-hp"
+                                                    placeholder="Masukkan Nomor HP Aktif" required>
                                             </div>
                                         </div>
                                         <div class="col-md-6 col-sm-6">
@@ -429,7 +431,7 @@
                                 <div class="card-footer text-end">
                                     <button type="button" class="btn btn-primary next-step">Selanjutnya</button>
                                 </div>
-                            </div> -->
+                            </div>
 
                             <div class="form-step" id="step-2">
                                 <div class="card-body">
@@ -480,16 +482,38 @@
 
                             <div class="form-step" id="step-3">
                                 <div class="card-body">
-                                    <h5>III. Data Kesehatan</h5>
-                                    <div class="form-group">
-                                        <label class="form-label" for="tinggi-badan">Tinggi Badan (cm)</label>
-                                        <input type="number" class="form-control" id="tinggi-badan" name="tinggi-badan"
-                                            placeholder="Masukkan tinggi badan" required>
+                                    <h5>III. Hasil Profiling Media Sosial yang ditemukan</h5>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="form-label" for="tinggi-badan">Media Sosial</label>
+                                                <select class="form-select social-media-type" name="social_media_type[]"
+                                                    required>
+                                                    <option value="">- Pilih Jenis Akun -</option>
+                                                    <option value="email">Email</option>
+                                                    <option value="instagram">Instagram</option>
+                                                    <option value="tiktok">Tiktok</option>
+                                                    <option value="facebook">Facebook</option>
+                                                    <option value="youtube">Youtube</option>
+                                                    <option value="twitter">Twitter</option>
+                                                    <option value="linkedin">LinkedIn</option>
+                                                    <option value="other">Lainnya</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="form-label" for="hasil_screenshot">Hasil
+                                                    Screenshot</label>
+                                                <input type="file" class="form-control" id="hasil_screenshot name="
+                                                    hasil_screenshot" required>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="form-group">
-                                        <label class="form-label" for="berat-badan">Berat Badan (kg)</label>
-                                        <input type="number" class="form-control" id="berat-badan" name="berat-badan"
-                                            placeholder="Masukkan berat badan" required>
+                                        <label class="form-label" for="keterangan">Keterangan</label>
+                                        <textarea class="form-control" id="keterangan" name="keterangan" rows="3"
+                                            required></textarea>
                                     </div>
                                 </div>
                                 <div class="card-footer d-flex justify-content-between">
